@@ -3,22 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Ozzy Osbourne - A Legacy Beyond the Darkness</title>
+    <title flex flex-col items-center text-center>Ozzy Osbourne - A Legacy Beyond the Darkness</title>
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <title class="text-red-300">A Legacy Beyond the Darkness</title>
+  <title class="text-red-300 justify-center flex flex-col items-center text-center">A Legacy Beyond the Darkness</title>
   <body>
     <div class="bg-gradient-to-b from-black via-red-950 to-red-900 min-h-screen">
     <div >
-      <main>
-        <h1 class="text-gray-200">A Legacy Beyond the Darkness</h1>
+
+      <main class="bg-black text-gray-100 font-sans px-6 py-16 max-w-5xl mx-auto"
+>        <header class="mb-12 flex flex-col items-center text-center">
+           <h1 class="text-4xl font-bold text-red-600 tracking-wide flex flex-col items-center text-center mt-16">Musical Milestones</h1>
+           <p class="mt-2 text-lg text-gray-400 italic flex flex-col items-center text-center">A journey through Ozzy’s iconic evolution</p>
+        </header>
+
         <div id="nav-placeholder"></div>
                 <header>
       <nav class="fixed top-0 left-0 w-full h-20 grid place-items-center z-50 transition-all bg-[#003347]">
         <div class="container mx-auto flex justify-between items-center h-full px-6">
           <!-- LOGO -->
           <a href="/" class="w-12">
-            <img src="assets/images/red-bat.jpg" alt="nav logo" class="object-cover object-center" />
+            <img src="assets/images/red-bat.jpg" alt="nav logo" class="object-cover object-center w-32 md:w-56" />
           </a>
 
           <!-- NAV LINKS -->
@@ -26,7 +31,7 @@
             <li><a href="index.html" class="hover:text-[#ff7b02] transition-colors">Home</a></li>
             <li><a href="musical-milestones.html" class="hover:text-[#ff7b02] transition-colors">Musical Milestones</a></li>
             <li><a href="charity-compassion.html" class="hover:text-[#ff7b02] transition-colors">Charity & Compassion</a></li>
-            <li><a href="unexpected-passions.html" class="hover:text-[#ff7b02] transition-colors">Unexpected Passions</a></li>
+            
             <li><a href="photo-gallery.html" class="hover:text-[#ff7b02] transition-colors">The Many Faces of Ozzy</a></li>
           </ul>
 
@@ -79,9 +84,7 @@
         <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:400ms]">
           <a href="charity-compassion.html" class="flex items-center h-full px-6">Charity & Compassion</a>
         </li>
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:600ms]">
-          <a href="unexpected-passions.html" class="flex items-center h-full px-6">Unexpected Passions</a>
-        </li>
+        
         <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:800ms]">
           <a href="photo-gallery.html" class="flex items-center h-full px-6">The Many Faces of Ozzy</a>
         </li>
@@ -117,14 +120,34 @@
       closeNavBtn.classList.add('hidden');
     });
   </script>
+        <section class="mb-16 scroll-mt-20 flex flex-col items-center text-center" id="black-sabbath"><img src="assets/images/black-sabbath.jpg" alt="Black Sabbath Live Performance" class="w-full h-auto mb-4 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-semibold text-red-600 mb-4"> Black Sabbath</h2>
+    <p class="text-gray-300 leading-relaxed">
+      In 1969, Ozzy joined forces with Tony Iommi, Geezer Butler, and Bill Ward to form <span class="font-bold text-white">Black Sabbath</span> — the band that birthed heavy metal. Their debut album, released in 1970, introduced a darker, more visceral sound that shook the foundations of rock. With tracks like <em>“Paranoid”</em> and <em>“Iron Man”</em>, Ozzy’s eerie vocals became the voice of a generation disillusioned and defiant.
+    </p>
+  </section>
+
+        <section class="mb-16 scroll-mt-20 flex flex-col items-center text-center" id="solo-breakthrough">
+    <h2 class="text-2xl font-semibold text-red-600 mb-4"> Solo Breakthrough</h2>
+    <p class="text-gray-300 leading-relaxed">
+      After leaving Sabbath in 1979, Ozzy launched a solo career that redefined his legacy. His debut album <span class="font-bold text-white">“Blizzard of Ozz”</span> (1980) featured hits like <em>“Crazy Train”</em> and <em>“Mr. Crowley”</em>, blending theatrical flair with raw emotion. With Randy Rhoads on guitar, Ozzy’s sound became a fusion of classical precision and metal chaos — a sonic signature that still echoes today.
+    </p>
+  </section>
 
 
-          
-
-
+        <section class="mb-16 scroll-mt-20 flex flex-col items-center text-center" id="rock-hall">
+    <h2 class="text-2xl font-semibold text-red-600 mb-4"> Rock Hall Inductions</h2>
+    <p class="text-gray-300 leading-relaxed">
+      In 2006, <span class="font-bold text-white">Black Sabbath</span> was inducted into the <span class="text-red-300">Rock and Roll Hall of Fame</span>, honoring their seismic impact on music history. Ozzy stood on that stage not just as a metal icon, but as a survivor — a voice that carried generations through chaos and catharsis. The induction was more than a ceremony; it was a coronation.
+    </p>
+    </section>
 
         </header>
-    
-        </header>
+        
     </body>
+    <footer class="bg-gradient-to-b from-black via-red-950 to-red-900 flex flex-col items-center text-center py-6 text-grey-200 mt-12 justify-center">
+        <p class="text-gray-200">"I'm not afraid of dying, I'm afraid of not trying." - Ozzy Osbourne</p>
+        <p class="text-gray-200">Tribute site by Anne C - Hoonoring the legacy of Ozzy Osbourne - @ 2025</a>
+        </p>
+    </footer>
 </html>     
