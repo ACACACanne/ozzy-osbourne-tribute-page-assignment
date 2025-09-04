@@ -2,52 +2,154 @@
 <html dir="ltr" lang="en" xml:lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Ozzy Osbourne - A Legacy Beyond the Darkness</title>
-    <link rel="stylesheet" href="styles.css">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link >
   </head>
-  <title>A Legacy Beyond the Darkness</title>
+  <title class="text-red-300">A Legacy Beyond the Darkness</title>
   <body>
-    <div class="background-blur"></div>
-    <div class="content">
+    <div class="bg-gradient-to-b from-black via-red-950 to-red-900 min-h-screen">
+    <div >
       <main>
-        <h1>A Legacy Beyond the Darkness</h1>
-        <header class="header">
-          <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="musical-milestones.html">Musical Milestones</a></li>
-                <li><a href="charity-compassion.html">Charity & Compassion</a></li>
-                <li><a href="unexpected-passions.html">Unexpected Passions</a></li>
-                <li><a href="photo-gallery.html">The Many Faces of Ozzy</a></li>
-            </ul>
-          </nav> 
+        <h1 class="text-gray-200">A Legacy Beyond the Darkness</h1>
+        <header>
+          <nav class="fixed top-0 left-0 w-full h-20 grid place-items-center z-50 transition-all bg-[#003347]">
+            <div class="container mx-auto flex justify-between items-center h-full px-6">
+           <!-- LOGO -->
+              <a href="/" class="w-12">
+                <img src="assets/images/red-bat.jpg" alt="nav logo" class="object-cover object-center">
+              </a>
+
+           <!-- NAV LINKS -->
+              <ul class="hidden lg:flex gap-16 text-white">
+                <li><a href="index.html" class="hover:text-[#ff7b02] transition-colors">Home</a></li>
+                <li><a href="musical-milestones.html" class="hover:text-[#ff7b02] transition-colors">Musical Milestones</a></li>
+                <li><a href="charity-compassion.html" class="hover:text-[#ff7b02] transition-colors">Charity & Compassion</a></li>
+                <li><a href="unexpected-passions.html" class="hover:text-[#ff7b02] transition-colors">Unexpected Passions</a></li>
+                <li><a href="photo-gallery.html" class="hover:text-[#ff7b02] transition-colors">The Many Faces of Ozzy</a></li>
+              </ul>
+
+            <!-- SOCIAL LINKS -->
+              <ul class="hidden lg:flex gap-4">
+                <li>
+                  <a href="https://www.instagram.com/ozzyosbourne/" target="_blank" aria-label="Follow Ozzy on Instagram"
+   class="w-10 h-10 grid place-items-center bg-[#003347] rounded-lg hover:shadow-[0_0_10px_#ff7b02] hover:scale-110 transition-transform duration-200">
+                    <img src="assets/images/instagram-icon.png" alt="Instagram icon" class="w-6 h-6">
+                  </a>
+
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/ozzyosbourne/" target="_blank" aria-label="Follow Ozzy on facebook"
+   class="w-10 h-10 grid place-items-center bg-[#003347] rounded-lg hover:shadow-[0_0_10px_#ff7b02] hover:scale-110 transition-transform duration-200">
+                    <img src="assets/images/facebook-icon.png" alt="Facebook icon" class="w-6 h-6">
+                  </a>
+                </li>
+                <li>
+                   <a href="https://www.youtube.com/user/ozzyosbourne/" target="_blank" aria-label="Subscribe to Ozzy's YouTube channel"
+   class="w-10 h-10 grid place-items-center bg-[#003347] rounded-lg hover:shadow-[0_0_10px_#ff7b02] hover:scale-110 transition-transform duration-200">
+                    <img src="assets/images/youtube-icon.png" alt="YouTube icon" class="w-6 h-6">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.ozzy.com" target="_blank" aria-label="Visit Ozzy's official website"
+   class="w-10 h-10 grid place-items-center bg-[#003347] rounded-lg hover:shadow-[0_0_10px_#ff7b02] hover:scale-110 transition-transform duration-200">
+                    <img src="assets/images/web-icon.png" alt="Web icon" class="w-6 h-6">
+                  </a>
+                </li>
+             </ul>
+
+      <!-- TOGGLE BUTTONS -->
+             <button class="block lg:hidden text-3xl text-white" id="nav__toggle-open">
+               <i class="uil uil-bars"></i>
+             </button>
+             <button class="hidden lg:hidden text-3xl text-white" id="nav__toggle-close">
+               <i class="uil uil-multiply"></i>
+             </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV LINKS -->
+  <ul class="absolute top-[4rem] right-0 text-white flex-col hidden lg:hidden w-48 shadow-lg" id="mobile-nav">
+    <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:0ms]">
+      <a href="index.html" class="flex items-center h-full px-6">Home</a>
+    </li>
+    <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:200ms]">
+      <a href="musical-milestones.html" class="flex items-center h-full px-6">Musical Milestones</a>
+    </li>
+    <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:400ms]">
+      <a href="charity-compassion.html" class="flex items-center h-full px-6">Charity & Compassion</a>
+    </li>
+    <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:600ms]">
+      <a href="unexpected-passions.html" class="flex items-center h-full px-6">Unexpected Passions</a>
+    </li>
+    <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:800ms]">
+      <a href="photo-gallery.html" class="flex items-center h-full px-6">The Many Faces of Ozzy</a>
+    </li>
+  </ul>
+</header>
+
+<!-- ICON LIBRARY (for toggle buttons only) -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- NAV TOGGLE SCRIPT -->
+<script>
+  const nav = document.getElementById('mobile-nav');
+  const openNavBtn = document.getElementById('nav__toggle-open');
+  const closeNavBtn = document.getElementById('nav__toggle-close');
+
+  openNavBtn.addEventListener('click', () => {
+    nav.classList.remove('hidden');
+    openNavBtn.classList.add('hidden');
+    closeNavBtn.classList.remove('hidden');
+  });
+
+  closeNavBtn.addEventListener('click', () => {
+    nav.classList.add('hidden');
+    openNavBtn.classList.remove('hidden');
+    closeNavBtn.classList.add('hidden');
+  });
+</script>
+
         </header> 
-        <h2>The Prince of Darkness, Illuminated</h2>   
-        <p>Ozzy Osbourne, often hailed as the "Prince of Darkness," is a figure whose influence extends far beyond the realm of heavy metal music. While his on-stage persona and tumultuous personal life have often captured headlines, there is a deeper, more nuanced legacy that Ozzy has cultivated over the decades. This legacy encompasses not only his groundbreaking contributions to music but also his unexpected passions and philanthropic efforts.</p>
-        <p>Born John Michael Osbourne in 1948, Ozzy's journey to stardom began in the late 1960s when he co-founded the legendary band Black Sabbath. The band's pioneering sound, characterized by heavy riffs and dark themes, laid the foundation for the heavy metal genre. Albums like "Paranoid" and "Master of Reality" are considered classics, influencing countless musicians and shaping the musical landscape for generations to come.</p>
-        <p>However, Ozzy's impact is not confined to his musical achievements. Over the years, he has become a beloved figure in popular culture, known for his candidness, humor, and resilience. His reality TV show, "The Osbournes," offered fans a glimpse into his family life, humanizing the rock star and showcasing his role as a devoted husband and father.</p>
-        <p>Beyond entertainment, Ozzy has also been involved in various charitable endeavors. He has supported causes such as animal rights, cancer research, and veterans' organizations. His philanthropic efforts demonstrate a compassionate side that contrasts with his dark stage persona, highlighting the complexity of his character.</p>
-        <p>In addition to his music and charity work, Ozzy has pursued unexpected passions, such as his love for gardening. His dedication to cultivating a beautiful garden at his home in England reflects a softer, more nurturing aspect of his personality, further enriching his multifaceted legacy.</p>
-        <p>In conclusion, Ozzy Osbourne's legacy is a testament to the power of reinvention and the ability to transcend stereotypes. While he may forever be associated with the darker elements of rock music, his contributions to culture, philanthropy, and personal growth paint a more comprehensive
+        <h2 class="text-red-300">The Prince of Darkness, Illuminated</h2>   
+        <p class="text-gray-200"
+>Ozzy Osbourne, often hailed as the "Prince of Darkness," is a figure whose influence extends far beyond the realm of heavy metal music. While his on-stage persona and tumultuous personal life have often captured headlines, there is a deeper, more nuanced legacy that Ozzy has cultivated over the decades. This legacy encompasses not only his groundbreaking contributions to music but also his unexpected passions and philanthropic efforts.</p>
+        <p class="text-gray-200"
+>Born John Michael Osbourne in 1948, Ozzy's journey to stardom began in the late 1960s when he co-founded the legendary band Black Sabbath. The band's pioneering sound, characterized by heavy riffs and dark themes, laid the foundation for the heavy metal genre. Albums like "Paranoid" and "Master of Reality" are considered classics, influencing countless musicians and shaping the musical landscape for generations to come.</p>
+        <p class="text-gray-200"
+>However, Ozzy's impact is not confined to his musical achievements. Over the years, he has become a beloved figure in popular culture, known for his candidness, humor, and resilience. His reality TV show, "The Osbournes," offered fans a glimpse into his family life, humanizing the rock star and showcasing his role as a devoted husband and father.</p>
+        <p class="text-gray-200"
+>Beyond entertainment, Ozzy has also been involved in various charitable endeavors. He has supported causes such as animal rights, cancer research, and veterans' organizations. His philanthropic efforts demonstrate a compassionate side that contrasts with his dark stage persona, highlighting the complexity of his character.</p>
+        <p class="text-gray-200"
+>In addition to his music and charity work, Ozzy has pursued unexpected passions, such as his love for gardening. His dedication to cultivating a beautiful garden at his home in England reflects a softer, more nurturing aspect of his personality, further enriching his multifaceted legacy.</p>
+        <p class="text-gray-200"
+>In conclusion, Ozzy Osbourne's legacy is a testament to the power of reinvention and the ability to transcend stereotypes. While he may forever be associated with the darker elements of rock music, his contributions to culture, philanthropy, and personal growth paint a more comprehensive
        picture  
     
-        <h3>Uncover the Many Faces of Ozzy</h3>
-        <p>Ozzy Osbourne's life and career are a rich tapestry of contrasts and complexities. From his groundbreaking music to his heartfelt philanthropy, Ozzy has shown that there is much more to him than meets the eye. His journey is a reminder that even those who seem to embody darkness can also shine brightly in unexpected ways.</p>
-        <div class="image-container">
+        <h3 class="text-gray-200"
+>Uncover the Many Faces of Ozzy</h3>
+        <p class="text-gray-200"
+>Ozzy Osbourne's life and career are a rich tapestry of contrasts and complexities. From his groundbreaking music to his heartfelt philanthropy, Ozzy has shown that there is much more to him than meets the eye. His journey is a reminder that even those who seem to embody darkness can also shine brightly in unexpected ways.</p>
+        <div >
           <img src="ozzy-osbourne.jpg" alt="Ozzy Osbourne" class="responsive-image">
-          <p class="caption">Ozzy Osbourne performing live, showcasing his enduring energy and passion for music.</p>
+          <p class="text-gray-200"
+>Ozzy Osbourne performing live, showcasing his enduring energy and passion for music.</p>
         </div>
-        <div class="button">  
+        <div >  
           <a href="musical-milestones.html" class="button">Explore Musical Milestones</a>
           <a href="charity-compassion.html" class="button">Discover Charity & Compassion</a>
           <a href="unexpected-passions.html" class="button">Learn About Unexpected Passions</a>
         </div>
       
-        <h2>Timeline</h2>
-        <div class="timeline">
-          <h3>Key Events in Ozzy Osbourne's Life and Career</h3>
-            <ul>
+        <h2 class="text-gray-200"
+>Timeline</h2>
+        <div>
+          <h3 class="text-gray-200"
+>Key Events in Ozzy Osbourne's Life and Career</h3>
+            <ul class="text-gray-200"
+>
               <li><strong>1948:</strong> John Michael Osbourne is born in Birmingham, England.</li>
               <li><strong>1968:</strong> Co-founds Black Sabbath, pioneering the heavy metal genre.</li>
               <li><strong>1970:</strong> Releases Black Sabbath's debut album, <em>Black Sabbath</em>.</li>
@@ -62,16 +164,19 @@
 
 
        </main>
+    </div>
   </body>
-  <footer class="footer">
-    <div class="footer-links">
+  <footer >
+    <div >
         <a href="https://www.ozzy.com">Ozzy's Official Website</a>
         <a href="https://www.youtube.com/user/ozzyosbourne">Ozzy's YouTube Channel</a>
         <a href="https://www.instagram.com/ozzyosbourne/">Ozzy on Instagram</a>
         <a href="https://www.facebook.com/ozzyosbourne">Ozzy on Facebook</a>
     </div>
-        <p class="footer-quote">"I'm not afraid of dying, I'm afraid of not trying." - Ozzy Osbourne</p>
-        <p class="footer-credit">Tribute site by Anne C - Hoonoring the legacy of Ozzy Osbourne - @ 2025</a>
+        <p class="text-gray-200"
+>"I'm not afraid of dying, I'm afraid of not trying." - Ozzy Osbourne</p>
+        <p class="text-gray-200"
+>Tribute site by Anne C - Hoonoring the legacy of Ozzy Osbourne - @ 2025</a>
         </p>
   </footer>
 </html>
