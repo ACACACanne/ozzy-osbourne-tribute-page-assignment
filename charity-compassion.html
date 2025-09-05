@@ -1,33 +1,35 @@
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en" xml:lang="en">
+  <!--Head section-->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Ozzy Osbourne - A Legacy Beyond the Darkness</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
+  <!--Body section-->
   <body>
+    <!-- Background gradient and main container -->
     <div class="bg-gradient-to-b from-black via-red-950 to-red-900 min-h-screen">
-    <div >
-      <main class="bg-black text-gray-100 font-sans px-6 py-16 max-w-5xl mx-auto">
-        <h1 class="text-red-800 text-5xl font-bold text-center mt-8 mb-4">A Legacy Beyond the Darkness</h1>
-        <div id="nav-placeholder"></div>
-    <header>
-      <nav class="fixed top-0 left-0 w-full h-20 grid place-items-center z-50 transition-all bg-[#003347]">
+      <header>
+        <h1 class="text-red-600  mb-4 mt-8 text-4xl font-bold mb-8 justify-center flex flex-col items-center text-center">Charity & Compassion</h1>
+        <!-- Navigation bar -->
+        <nav class="fixed top-0 left-0 w-full h-20 grid place-items-center z-50 transition-all bg-[#003347]">
         <div class="container mx-auto flex justify-between items-center h-full px-6">
-          <!-- LOGO -->
+          <!-- Logo -->
           <a href="/" class="w-12">
             <img src="assets/images/red-bat.jpg" alt="nav logo" class="object-cover object-center" />
           </a>
-
-          <!-- NAV LINKS -->
+          <!-- Nav links -->
           <ul class="hidden lg:flex gap-16 text-white">
             <li><a href="index.html" class="hover:text-[#ff7b02] transition-colors">Home</a></li>
             <li><a href="musical-milestones.html" class="hover:text-[#ff7b02] transition-colors">Musical Milestones</a></li>
             <li><a href="charity-compassion.html" class="hover:text-[#ff7b02] transition-colors">Charity & Compassion</a></li>
             <li><a href="photo-gallery.html" class="hover:text-[#ff7b02] transition-colors">The Many Faces of Ozzy</a></li>
           </ul>
-
-          <!-- SOCIAL LINKS -->
+          <!-- Social links -->
           <ul class="hidden lg:flex gap-4">
             <li>
               <a href="https://www.instagram.com/ozzyosbourne/" target="_blank" aria-label="Follow Ozzy on Instagram"
@@ -54,8 +56,7 @@
               </a>
             </li>
           </ul>
-
-          <!-- TOGGLE BUTTONS -->
+          <!-- Toogle Buttons -->
           <button class="block lg:hidden text-3xl text-white" id="nav__toggle-open">
             <i class="uil uil-bars"></i>
           </button>
@@ -63,90 +64,93 @@
             <i class="uil uil-multiply"></i>
           </button>
         </div>
-      </nav>
-
-      <!-- MOBILE NAV LINKS -->
-      <ul class="absolute top-[4rem] right-0 text-white flex-col hidden lg:hidden w-48 shadow-lg" id="mobile-nav">
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:0ms]">
-          <a href="index.html" class="flex items-center h-full px-6">Home</a>
-        </li>
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:200ms]">
-          <a href="musical-milestones.html" class="flex items-center h-full px-6">Musical Milestones</a>
-        </li>
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:400ms]">
-          <a href="charity-compassion.html" class="flex items-center h-full px-6">Charity & Compassion</a>
-        </li>
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:800ms]">
-          <a href="photo-gallery.html" class="flex items-center h-full px-6">The Many Faces of Ozzy</a>
-        </li>
-      </ul>
-    </header>
-
-  </div>
-
-  <!-- ICON LIBRARY -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-  <!-- NAV TOGGLE SCRIPT -->
-  <script>
-    const nav = document.getElementById('mobile-nav');
-    const openNavBtn = document.getElementById('nav__toggle-open');
-    const closeNavBtn = document.getElementById('nav__toggle-close');
-
-    openNavBtn.addEventListener('click', () => {
-      nav.classList.remove('hidden');
-      openNavBtn.classList.add('hidden');
-      closeNavBtn.classList.remove('hidden');
-    });
-
-    closeNavBtn.addEventListener('click', () => {
-      nav.classList.add('hidden');
-      openNavBtn.classList.remove('hidden');
-      closeNavBtn.classList.add('hidden');
-    });
-  </script>
-
-        <section class="mt-24 px-6 max-w-4xl mx-auto text-gray-200">
-  <h2 class="text-red-500 text-3xl font-bold text-center mb-6">Charity & Compassion</h2>
-  <p class="text-lg leading-relaxed text-center mb-12">
-    Beneath the thunderous riffs and rebellious persona, Ozzy Osbourne has quietly built a legacy of compassion. His final concert wasn’t just a farewell to music — it was a tribute to causes that mattered deeply to him.
-  </p>
-
-  <!-- Final Concert Beneficiaries -->
-  <div class="mb-12">
-    <h3 class="text-red-400 text-xl font-semibold mb-4 text-center">Final Concert Beneficiaries</h3>
-    <ul class="list-disc list-inside text-gray-300 space-y-2">
-      <li><strong>Cure Parkinson’s:</strong> Supporting research and treatment breakthroughs.</li>
-      <li><strong>Birmingham Children’s Hospital:</strong> Honoring his hometown with healing and hope.</li>
-      <li><strong>Acorn Children’s Hospice:</strong> Providing comfort and care to families in need.</li>
-    </ul>
-  </div>
-
-  <!-- Supported Causes -->
-  <div class="mb-12">
-    <h3 class="text-red-400 text-xl font-semibold mb-4 text-center">Supported Causes</h3>
-    <ul class="list-disc list-inside text-gray-300 space-y-2">
-      <li><strong>Sharon Osbourne Colon Cancer Program:</strong> A personal mission turned public advocacy.</li>
-      <li><strong>MusiCares, Save the Children, Prince’s Trust:</strong> Championing music, youth, and global resilience.</li>
-      <li><strong>LGBTQ+ Rights & Youth Empowerment:</strong> Standing for inclusion and self-expression.</li>
-      <li><strong>Global Health Initiatives:</strong> Using his platform to amplify urgent humanitarian needs.</li>
-    </ul>
-  </div>
-
-  
-</section>
-
-
-          
-
-
-
+        <!-- Mobile nav links -->
+         <ul class="absolute top-[4rem] right-0 text-white flex-col hidden lg:hidden w-48 shadow-lg" id="mobile-nav">
+           <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:0ms]">
+             <a href="index.html" class="flex items-center h-full px-6">Home</a>
+           </li>
+           <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:200ms]">
+              <a href="musical-milestones.html" class="flex items-center h-full px-6">Musical Milestones</a>
+           </li>
+           <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:400ms]">
+              <a href="charity-compassion.html" class="flex items-center h-full px-6">Charity & Compassion</a>
+           </li>
         
-      </body>
-      <footer class="bg-gradient-to-b from-black via-red-950 to-red-900 flex flex-col items-center text-center py-6 text-grey-200 mt-12 justify-center">
+           <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:800ms]">
+             <a href="photo-gallery.html" class="flex items-center h-full px-6">The Many Faces of Ozzy</a>
+           </li>
+         </ul>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <main class="pt-8 px-6">
+      <h1 class="text-red-600  mb-4 mt-8 text-4xl font-bold mb-8 justify-center flex flex-col items-center text-center">A Legacy Beyond the Darkness</h1>
+      <!-- Page content -->
+      <div class="max-w-4xl mx-auto">
+        <header>
+          <div class="mt-8 flex flex-col items-center text-center">
+          <!-- Icon library -->
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Nav toggle script -->
+    <script>
+      const nav = document.getElementById('mobile-nav');
+      const openNavBtn = document.getElementById('nav__toggle-open');
+      const closeNavBtn = document.getElementById('nav__toggle-close');
+
+      openNavBtn.addEventListener('click', () => {
+        nav.classList.remove('hidden');
+        openNavBtn.classList.add('hidden');
+        closeNavBtn.classList.remove('hidden');
+      });
+
+      closeNavBtn.addEventListener('click', () => {
+        nav.classList.add('hidden');
+        openNavBtn.classList.remove('hidden');
+        closeNavBtn.classList.add('hidden');
+      });
+    </script>
+     <!-- Main content section -->
+      <section class="mt-8 max-w-screen-sm mx-auto px-4">
+        <header>
+          <h2 class="text-red-500 justify-center flex flex-col items-center text-center mt-8 mb-4 bold">Ozzy Osbourne has quietly built a legacy</h2> 
+        </header> 
+
+        <section class="mt-8 max-w-screen-sm mx-auto px-4 text-gray-200">
+         <p class="text-gray-200 mt-4 break-words">Beneath the thunderous riffs and rebellious persona, Ozzy Osbourne has quietly built a legacy of compassion. His final concert wasn’t just a farewell to music — it was a tribute to causes that mattered deeply to him.</p>
+
+        <!-- Final Concert Beneficiaries -->
+        <section class="px-4 sm:px-6 md:px-8 max-w-screen-md mx-auto">
+          <header>
+            <h3 class="text-red-500 mt-8 mb-4 bold">Final Concert Beneficiaries</h3>
+          </header>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li><strong>Cure Parkinson’s:</strong> Supporting research and treatment breakthroughs.</li>
+            <li><strong>Birmingham Children’s Hospital:</strong> Honoring his hometown with healing and hope.</li>
+            <li><strong>Acorn Children’s Hospice:</strong> Providing comfort and care to families in need.</li>
+          </ul>
+        </section>
+
+        <!-- Supported Causes -->
+        <section class="px-4 sm:px-6 md:px-8 max-w-screen-md mx-auto">
+          <header>
+            <h3 class="text-red-500 mt-8 mb-4 bold">Supported Causes</h3>
+          </header>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li><strong>Sharon Osbourne Colon Cancer Program:</strong> A personal mission turned public advocacy.</li>
+            <li><strong>MusiCares, Save the Children, Prince’s Trust:</strong> Championing music, youth, and global resilience.</li>
+            <li><strong>LGBTQ+ Rights & Youth Empowerment:</strong> Standing for inclusion and self-expression.</li>
+            <li><strong>Global Health Initiatives:</strong> Using his platform to amplify urgent humanitarian needs.</li>
+          </ul>
+        </section>
+        
+      </main>
+     </div>
+   </body>
+   <footer class="bg-gradient-to-b from-black via-red-950 to-red-900 flex flex-col items-center text-center py-6 text-grey-200 mt-4 justify-center">
         <p class="text-gray-200">"I'm not afraid of dying, I'm afraid of not trying." - Ozzy Osbourne</p>
         <p class="text-gray-200">Tribute site by Anne C - Honoring the legacy of Ozzy Osbourne - @ 2025</a>
         </p>
-    </footer>
+  </footer>
 </html>
