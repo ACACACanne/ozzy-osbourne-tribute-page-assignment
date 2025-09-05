@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en" xml:lang="en">
+  <!--Head section-->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-   
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Ozzy Osbourne - A Legacy Beyond the Darkness</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-   <body>
+  <!--Body section-->
+  <body>
+    <!-- Background gradient and main container -->
     <div class="bg-gradient-to-b from-black via-red-950 to-red-900 min-h-screen">
-    <div >
-
-      <main class="bg-black text-gray-100 font-sans px-6 py-16 max-w-5xl mx-auto"
->        <header class="mb-12 flex flex-col items-center text-center">
-           <h1 class="text-4xl font-bold text-red-600 tracking-wide flex flex-col items-center text-center mt-16">Musical Milestones</h1>
-           <p class="mt-2 text-lg text-gray-400 italic flex flex-col items-center text-center">A journey through Ozzy’s iconic evolution</p>
-        </header>
-
-        <div id="nav-placeholder"></div>
-                <header>
-      <nav class="fixed top-0 left-0 w-full h-20 grid place-items-center z-50 transition-all bg-[#003347]">
+      <header>
+        <h1 class="text-red-600  mb-4 mt-8 text-4xl font-bold mb-8 justify-center flex flex-col items-center text-center">Musical Milestones</h1>
+        <!-- Navigation bar -->
+        <nav class="fixed top-0 left-0 w-full h-20 grid place-items-center z-50 transition-all bg-[#003347]">
         <div class="container mx-auto flex justify-between items-center h-full px-6">
-          <!-- LOGO -->
+          <!-- Logo -->
           <a href="/" class="w-12">
-            <img src="assets/images/red-bat.jpg" alt="nav logo" class="object-cover object-center w-32 md:w-56" />
+            <img src="assets/images/red-bat.jpg" alt="nav logo" class="object-cover object-center" />
           </a>
-
-          <!-- NAV LINKS -->
+          <!-- Nav links -->
           <ul class="hidden lg:flex gap-16 text-white">
             <li><a href="index.html" class="hover:text-[#ff7b02] transition-colors">Home</a></li>
             <li><a href="musical-milestones.html" class="hover:text-[#ff7b02] transition-colors">Musical Milestones</a></li>
             <li><a href="charity-compassion.html" class="hover:text-[#ff7b02] transition-colors">Charity & Compassion</a></li>
-            
             <li><a href="photo-gallery.html" class="hover:text-[#ff7b02] transition-colors">The Many Faces of Ozzy</a></li>
           </ul>
-
-          <!-- SOCIAL LINKS -->
+          <!-- Social links -->
           <ul class="hidden lg:flex gap-4">
             <li>
               <a href="https://www.instagram.com/ozzyosbourne/" target="_blank" aria-label="Follow Ozzy on Instagram"
@@ -61,8 +55,7 @@
               </a>
             </li>
           </ul>
-
-          <!-- TOGGLE BUTTONS -->
+          <!-- Toogle Buttons -->
           <button class="block lg:hidden text-3xl text-white" id="nav__toggle-open">
             <i class="uil uil-bars"></i>
           </button>
@@ -70,83 +63,80 @@
             <i class="uil uil-multiply"></i>
           </button>
         </div>
-      </nav>
-
-      <!-- MOBILE NAV LINKS -->
-      <ul class="absolute top-[4rem] right-0 text-white flex-col hidden lg:hidden w-48 shadow-lg" id="mobile-nav">
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:0ms]">
-          <a href="index.html" class="flex items-center h-full px-6">Home</a>
-        </li>
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:200ms]">
-          <a href="musical-milestones.html" class="flex items-center h-full px-6">Musical Milestones</a>
-        </li>
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:400ms]">
-          <a href="charity-compassion.html" class="flex items-center h-full px-6">Charity & Compassion</a>
-        </li>
+        <!-- Mobile nav links -->
+         <ul class="absolute top-[4rem] right-0 text-white flex-col hidden lg:hidden w-48 shadow-lg" id="mobile-nav">
+           <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:0ms]">
+             <a href="index.html" class="flex items-center h-full px-6">Home</a>
+           </li>
+           <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:200ms]">
+              <a href="musical-milestones.html" class="flex items-center h-full px-6">Musical Milestones</a>
+           </li>
+           <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:400ms]">
+              <a href="charity-compassion.html" class="flex items-center h-full px-6">Charity & Compassion</a>
+           </li>
         
-        <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:800ms]">
-          <a href="photo-gallery.html" class="flex items-center h-full px-6">The Many Faces of Ozzy</a>
-        </li>
-      </ul>
-    </header> 
+           <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:800ms]">
+             <a href="photo-gallery.html" class="flex items-center h-full px-6">The Many Faces of Ozzy</a>
+           </li>
+         </ul>
+        </nav>
+    </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="pt-24 px-6">
-      
-      <!-- Your page content goes here -->
-    </main>
-  </div>
+    <!-- Main content -->
+    <main class="pt-8 px-6">
+      <h1 class="text-red-600  mb-4 mt-8 text-4xl font-bold mb-8 justify-center flex flex-col items-center text-center">A Legacy Beyond the Darkness</h1>
+      <!-- Page content -->
+      <div class="max-w-4xl mx-auto">
+        <header>
+          <div class="mt-8 flex flex-col items-center text-center">
+          <!-- Icon library -->
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  <!-- ICON LIBRARY -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Nav toggle script -->
+    <script>
+      const nav = document.getElementById('mobile-nav');
+      const openNavBtn = document.getElementById('nav__toggle-open');
+      const closeNavBtn = document.getElementById('nav__toggle-close');
 
-  <!-- NAV TOGGLE SCRIPT -->
-  <script>
-    const nav = document.getElementById('mobile-nav');
-    const openNavBtn = document.getElementById('nav__toggle-open');
-    const closeNavBtn = document.getElementById('nav__toggle-close');
+      openNavBtn.addEventListener('click', () => {
+        nav.classList.remove('hidden');
+        openNavBtn.classList.add('hidden');
+        closeNavBtn.classList.remove('hidden');
+      });
 
-    openNavBtn.addEventListener('click', () => {
-      nav.classList.remove('hidden');
-      openNavBtn.classList.add('hidden');
-      closeNavBtn.classList.remove('hidden');
-    });
-
-    closeNavBtn.addEventListener('click', () => {
-      nav.classList.add('hidden');
-      openNavBtn.classList.remove('hidden');
-      closeNavBtn.classList.add('hidden');
-    });
-  </script>
+      closeNavBtn.addEventListener('click', () => {
+        nav.classList.add('hidden');
+        openNavBtn.classList.remove('hidden');
+        closeNavBtn.classList.add('hidden');
+      });
+    </script>
+      <!-- Main content section -->
+      <section class="mt-8 max-w-screen-sm mx-auto px-4">
+        <header>
+          <h2 class="text-red-500 justify-center flex flex-col items-center text-center mt-8 mb-4 bold">A journey through Ozzy’s iconic evolution</h2> 
+        </header> 
         <section class="mb-16 scroll-mt-20 flex flex-col items-center text-center" id="black-sabbath"><img src="assets/images/black-sabbath.jpg" alt="Black Sabbath Live Performance" class="w-full h-auto mb-4 rounded-lg shadow-lg">
-    <h2 class="text-2xl font-semibold text-red-600 mb-4"> Black Sabbath</h2>
-    <p class="text-gray-300 leading-relaxed">
-      In 1969, Ozzy joined forces with Tony Iommi, Geezer Butler, and Bill Ward to form <span class="font-bold text-white">Black Sabbath</span> — the band that birthed heavy metal. Their debut album, released in 1970, introduced a darker, more visceral sound that shook the foundations of rock. With tracks like <em>“Paranoid”</em> and <em>“Iron Man”</em>, Ozzy’s eerie vocals became the voice of a generation disillusioned and defiant.
-    </p>
-  </section>
+          <h2 class="text-2xl font-semibold text-red-600 mb-4"> Black Sabbath</h2>
+          <p class="text-gray-300 leading-relaxed break-words">In 1969, Ozzy joined forces with Tony Iommi, Geezer Butler, and Bill Ward to form <span class="font-bold text-white">Black Sabbath</span> — the band that birthed heavy metal. Their debut album, released in 1970, introduced a darker, more visceral sound that shook the foundations of rock. With tracks like <em>“Paranoid”</em> and <em>“Iron Man”</em>, Ozzy’s eerie vocals became the voice of a generation disillusioned and defiant.</p>
+      </section>
 
-        <section class="mb-16 scroll-mt-20 flex flex-col items-center text-center" id="solo-breakthrough">
-    <h2 class="text-2xl font-semibold text-red-600 mb-4"> Solo Breakthrough</h2>
-    <p class="text-gray-300 leading-relaxed">
-      After leaving Sabbath in 1979, Ozzy launched a solo career that redefined his legacy. His debut album <span class="font-bold text-white">“Blizzard of Ozz”</span> (1980) featured hits like <em>“Crazy Train”</em> and <em>“Mr. Crowley”</em>, blending theatrical flair with raw emotion. With Randy Rhoads on guitar, Ozzy’s sound became a fusion of classical precision and metal chaos — a sonic signature that still echoes today.
-    </p>
-  </section>
+      <section class="mb-16 scroll-mt-20 flex flex-col items-center text-center" id="solo-breakthrough">
+        <h2 class="text-2xl font-semibold text-red-600 mb-4"> Solo Breakthrough</h2>
+        <p class="text-gray-300 leading-relaxed break-words">After leaving Sabbath in 1979, Ozzy launched a solo career that redefined his legacy. His debut album <span class="font-bold text-white">“Blizzard of Ozz”</span> (1980) featured hits like <em>“Crazy Train”</em> and <em>“Mr. Crowley”</em>, blending theatrical flair with raw emotion. With Randy Rhoads on guitar, Ozzy’s sound became a fusion of classical precision and metal chaos — a sonic signature that still echoes today.</p>
+      </section>
 
+      <section class="mb-16 scroll-mt-20 flex flex-col items-center text-center" id="rock-hall">
+        <h2 class="text-2xl font-semibold text-red-600 mb-4"> Rock Hall Inductions</h2>
+        <p class="text-gray-300 leading-relaxed break-words">In 2006, <span class="font-bold text-white">Black Sabbath</span> was inducted into the <span class="text-red-300">Rock and Roll Hall of Fame</span>, honoring their seismic impact on music history. Ozzy stood on that stage not just as a metal icon, but as a survivor — a voice that carried generations through chaos and catharsis. The induction was more than a ceremony; it was a coronation.</p>
+      </section>
 
-        <section class="mb-16 scroll-mt-20 flex flex-col items-center text-center" id="rock-hall">
-    <h2 class="text-2xl font-semibold text-red-600 mb-4"> Rock Hall Inductions</h2>
-    <p class="text-gray-300 leading-relaxed">
-      In 2006, <span class="font-bold text-white">Black Sabbath</span> was inducted into the <span class="text-red-300">Rock and Roll Hall of Fame</span>, honoring their seismic impact on music history. Ozzy stood on that stage not just as a metal icon, but as a survivor — a voice that carried generations through chaos and catharsis. The induction was more than a ceremony; it was a coronation.
-    </p>
-    </section>
-
-        </header>
-        
-    </body>
-    <footer class="bg-gradient-to-b from-black via-red-950 to-red-900 flex flex-col items-center text-center py-6 text-grey-200 mt-12 justify-center">
+     </main>
+    </div>
+  </body>
+  <footer class="bg-gradient-to-b from-black via-red-950 to-red-900 flex flex-col items-center text-center py-6 text-grey-200 mt-4 justify-center">
         <p class="text-gray-200">"I'm not afraid of dying, I'm afraid of not trying." - Ozzy Osbourne</p>
         <p class="text-gray-200">Tribute site by Anne C - Honoring the legacy of Ozzy Osbourne - @ 2025</a>
         </p>
-    </footer>
-</html>     
+  </footer>
+</html>
