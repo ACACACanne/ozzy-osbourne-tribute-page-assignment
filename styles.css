@@ -1,0 +1,37 @@
+<!--Hide elements by default-->
+.hidden {
+    display: none;
+}
+
+<!--Navigation Bar-->
+.nav-toggle {
+    background-color: #222;
+    color: #fff;
+    border: none;       
+    padding: 10px 15px;
+    cursor: pointer;        
+    font-size: 1rem;
+}
+
+<!--Mobile Nav-->
+#mobile-nav {
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
+}   
+
+<!--Layout and overflow for the scroll-->
+.scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #111;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.scroll-content {
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+}

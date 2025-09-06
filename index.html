@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en" xml:lang="en">
-  <!--Head section-->
+  
+<!--Head section-->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Ozzy Osbourne - A Legacy Beyond the Darkness</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
+  
   <!--Body section-->
   <body>
     <!-- Background gradient and main container -->
     <div class="bg-gradient-to-b from-black via-red-950 to-red-900 min-h-screen">
       <header>
         <h1 class="text-red-600  mb-4 mt-8 text-4xl font-bold mb-8 justify-center flex flex-col items-center text-center">A Legacy Beyond the Darkness</h1>
+        
         <!-- Navigation bar -->
         <nav class="fixed top-0 left-0 w-full h-20 grid place-items-center z-50 transition-all bg-[#003347]">
         <div class="container mx-auto flex justify-between items-center h-full px-6">
+          
           <!-- Logo -->
           <a href="/" class="w-12">
             <img src="assets/images/red-bat.jpg" alt="nav logo" class="object-cover object-center" />
           </a>
+          
           <!-- Nav links -->
           <ul class="hidden lg:flex gap-16 text-white">
             <li><a href="index.html" class="hover:text-[#ff7b02] transition-colors">Home</a></li>
@@ -28,6 +34,7 @@
             <li><a href="charity-compassion.html" class="hover:text-[#ff7b02] transition-colors">Charity & Compassion</a></li>
             <li><a href="photo-gallery.html" class="hover:text-[#ff7b02] transition-colors">The Many Faces of Ozzy</a></li>
           </ul>
+          
           <!-- Social links -->
           <ul class="flex flex-row gap-4 justify-center">
             <li>
@@ -55,14 +62,16 @@
               </a>
             </li>
           </ul>
+          
           <!-- Toogle Buttons -->
-          <button class="block lg:hidden text-3xl text-white" id="nav__toggle-open">
+          <button class="block lg:hidden text-3xl text-white nav-toggle" id="nav__toggle-open">
             <i class="uil uil-bars"></i>
           </button>
-          <button class="hidden lg:hidden text-3xl text-white" id="nav__toggle-close">
+          <button class="hidden lg:hidden text-3xl text-white nav-toggle hidden" id="nav__toggle-close">
             <i class="uil uil-multiply"></i>
           </button>
         </div>
+        
         <!-- Mobile nav links -->
          <ul class="absolute top-[4rem] right-0 text-white flex-col hidden lg:hidden w-48 shadow-lg" id="mobile-nav">
            <li class="h-20 shadow-[-3rem_3rem_3rem_rgba(0,0,0,0.7)] bg-[#003347] hover:bg-[#003347]/80 animate-navAnimation [animation-delay:0ms]">
@@ -83,8 +92,9 @@
     </header>
 
     <!-- Main content -->
-    <main class="pt-8 px-6">
+    <main class="flex flex-col gap-8 max-w-screen-xl mx-auto">
       <h1 class="text-red-600  mb-4 mt-8 text-4xl font-bold mb-8 justify-center flex flex-col items-center text-center">A Legacy Beyond the Darkness</h1>
+      
       <!-- Page content -->
       <div class="max-w-4xl mx-auto">
         <header>
@@ -93,24 +103,6 @@
           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <!-- Nav toggle script -->
-    <script>
-      const nav = document.getElementById('mobile-nav');
-      const openNavBtn = document.getElementById('nav__toggle-open');
-      const closeNavBtn = document.getElementById('nav__toggle-close');
-
-      openNavBtn.addEventListener('click', () => {
-        nav.classList.remove('hidden');
-        openNavBtn.classList.add('hidden');
-        closeNavBtn.classList.remove('hidden');
-      });
-
-      closeNavBtn.addEventListener('click', () => {
-        nav.classList.add('hidden');
-        openNavBtn.classList.remove('hidden');
-        closeNavBtn.classList.add('hidden');
-      });
-    </script>
       <!-- Main content section -->
       <section class="mt-8 max-w-screen-sm mx-auto px-4">
         <header>
@@ -132,12 +124,14 @@
           <img src="assets/images/ozzy-osbourne.png" alt="Ozzy Osbourne" class="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto mt-8 rounded-lg shadow-lg">
           <p class="text-gray-200 mt-4 break-words">Ozzy Osbourne performing live, showcasing his enduring energy and passion for music.</p>
         </div>
-      <!--Timeline-->
+      
+        <!--Timeline-->
       <section class="max-w-screen-sm mx-auto px-4">
         <header> 
           <h2 class="text-gray-200 mt-8 mb-4 text-center  font-bold text-3xl">Timeline</h2>
           <h3 class="text-gray-200 mt-4 text-center font-semibold text-xl">Key Events in Ozzy Osbourne's Life and Career</h3>
         </header>  
+      
           <div class="flex flex-col overflow-y-auto max-h-[80vh] px-4 py-6 space-y-8">
             <ul class="text-gray-200">
               <li class="text-gray-200 relative pl-6 border-l-2 border-red-700 transition-transform duration-500 ease-in-out hover:scale-105"><span class="absolute left-0 top-1 w-3 h-3 bg-red-700 rounded-full"></span>
@@ -164,16 +158,15 @@
 <strong>2020:</strong> Announces his farewell tour, marking the end of an era in rock music.</li>
             </ul>
           </div>
-          <style>
-           @keyframes scrollTimeline {
-             0% { transform: translateX(0); }
-             100% { transform: translateX(-50%); }
-          }
-
-           .animate-scrollTimeline {
-              animation: scrollTimeline 30s linear infinite;
-            }
-           </style>
+        
+        <div class="overflow-hidden whitespace-nowrap bg-black text-white py-2">
+           <div class="inline-block animate-scrollTimeline">
+             <span class="mx-4">Ozzy Osbourne</span>
+             <span class="mx-4">Black Sabbath</span>
+             <span class="mx-4">Crazy Train</span>
+             <span class="mx-4">Bark at the Moon</span>
+           </div>
+        </div>
       </section>
 
       <!--Survey Form-->
@@ -185,7 +178,7 @@
         </header>
         <p id="description">Please fill out this survey form with the required information</p>
 
-        <form id="survey-form" action="https://formsubmit.co/annechabab07@gmail.com" method="post">
+        <form id="survey-form" action="https://formsubmit.co/annechabab07%40gmail.com" method="POST">
         <fieldset class="border border-red-700 p-4 rounded">
 
           <legend class="text-lg font-semibold text-red-500"> Your Tribute </legend>
@@ -208,6 +201,7 @@
      </main>
      </div>
   </body>
+  
   <!--Footer-->
   <footer class="bg-gradient-to-b from-black via-red-950 to-red-900 flex flex-col items-center text-center py-6 text-grey-200 mt-4 justify-center">
         <p class="text-gray-200">"I'm not afraid of dying, I'm afraid of not trying." - Ozzy Osbourne</p>
