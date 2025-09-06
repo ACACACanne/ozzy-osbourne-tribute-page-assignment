@@ -67,7 +67,7 @@
           <button class="block lg:hidden text-3xl text-white nav-toggle" id="nav__toggle-open">
             <i class="uil uil-bars"></i>
           </button>
-          <button class="hidden lg:hidden text-3xl text-white nav-toggle hidden" id="nav__toggle-close">
+          <button class="lg:hidden text-3xl text-white nav-toggle hidden" id="nav__toggle-close">
             <i class="uil uil-multiply"></i>
           </button>
         </div>
@@ -89,6 +89,28 @@
            </li>
          </ul>
         </nav>
+
+        <script>
+           document.addEventListener('DOMContentLoaded', () => {
+              const nav = document.getElementById('mobile-nav');
+              const openNavBtn = document.getElementById('nav__toggle-open');
+              const closeNavBtn = document.getElementById('nav__toggle-close');
+
+           openNavBtn.addEventListener('click', () => {
+              nav.classList.remove('hidden');
+              openNavBtn.classList.add('hidden');
+              closeNavBtn.classList.remove('hidden');
+           });
+
+           closeNavBtn.addEventListener('click', () => {
+             nav.classList.add('hidden');
+            openNavBtn.classList.remove('hidden');
+            closeNavBtn.classList.add('hidden');
+           });
+         });
+       </script>
+
+
     </header>
 
     <!-- Main content -->
